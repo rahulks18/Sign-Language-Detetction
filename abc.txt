@@ -1,0 +1,37 @@
+ABC:1A 
+BCD:2B
+
+class ABC{
+    int a;
+    float b;
+public:
+    ABC(int x, float y){
+        a = x;
+        b = y;
+    }
+
+    friend abc();
+};
+
+int sum(int a, int b){
+    return a+b;
+}
+
+int sum(int x, int y, int z){
+    return x+y+z;
+}
+
+float sum(float p, float q){
+    return p + q;
+}
+
+
+
+int main(){
+    ABC obj1(1, 1.2);
+    ABC obj2(2, 2.2);
+
+    ABC obj3 = obj1 + obj2;
+
+
+}
